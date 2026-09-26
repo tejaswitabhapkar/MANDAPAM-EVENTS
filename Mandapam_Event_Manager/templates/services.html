@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}
+Services
+{% endblock %}
+
+
+{% block content %}
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">
+            SERVICES
+        </p>
+
+        <h1>
+            Choose Your Event Service
+        </h1>
+
+        <p>
+            Select any service to open its booking form.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+        {% set images = [
+
+            (
+                "photo-1519741497674-611481863552",
+                "photo-1511285560929-80b456fea0bc"
+            ),
+
+            (
+                "photo-1530103862676-de8c9debad1d",
+                "photo-1513151233558-d860c5398176"
+            ),
+
+            (
+                "photo-1497366754035-f200968a6e72",
+                "photo-1497366216548-37526070297c"
+            ),
+
+            (
+                "photo-1501386761578-eac5c94b800a",
+                "photo-1492684223066-81342ee5ff30"
+            ),
+
+            (
+                "photo-1555244162-803834f70033",
+                "photo-1515003197210-e0cd71810b5f"
+            ),
+
+            (
+                "photo-1516035069371-29a1b244cc32",
+                "photo-1452780212940-6f5c0d14d848"
+            )
+
+        ] %}
+
+
+        {% for service in services %}
+
+            {% set pair = images[loop.index0] %}
+
+
+            <article class="service-card reveal">
+
+                <img
+                    src="https://images.unsplash.com/{{ pair[0] }}?auto=format&fit=crop&w=900&q=80"
+                    data-backup="https://images.unsplash.com/{{ pair[1] }}?auto=format&fit=crop&w=900&q=80"
+                    alt="{{ service['name'] }}"
+                    onerror="swapImage(this)"
+                >
+
+
+                <div class="card-content">
+
+                    <h2>
+                        {{ service["name"] }}
+                    </h2>
+
+                    <p>
+                        {{ service["description"] }}
+                    </p>
+
+                    <a
+                        class="btn primary"
+                        href="{{ url_for('book', service_id=service['id']) }}"
+                    >
+                        Book This Service
+                    </a>
+
+                </div>
+
+            </article>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block title %}
+Feedback
+{% endblock %}
+
+
+{% block content %}
+
+<section class="form-page">
+
+    <div class="form-card wide reveal">
+
+        <h1>
+            Share Your Feedback
+        </h1>
+
+
+        <form method="post">
+
+            <label>
+                Email
+            </label>
+
+            <input
+                type="email"
+                name="email"
+            >
+
+
+            <label>
+                Rating
+            </label>
+
+            <select name="rating">
+
+                <option value="">
+                    Select
+                </option>
+
+                <option>
+                    Excellent
+                </option>
+
+                <option>
+                    Good
+                </option>
+
+                <option>
+                    Average
+                </option>
+
+                <option>
+                    Poor
+                </option>
+
+            </select>
+
+
+            <label>
+                Features you liked
+            </label>
+
+
+            <div class="checks">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        name="features"
+                        value="Booking"
+                    >
+
+                    Booking
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        name="features"
+                        value="Services"
+                    >
+
+                    Services
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        name="features"
+                        value="Dashboard"
+                    >
+
+                    Dashboard
+
+                </label>
+
+            </div>
+
+
+            <label>
+                What should be improved?
+            </label>
+
+            <input
+                type="text"
+                name="improvement"
+            >
+
+
+            <label>
+                Comments
+            </label>
+
+            <textarea
+                name="comments"
+                rows="5"
+            ></textarea>
+
+
+            <button
+                class="btn primary"
+                type="submit"
+            >
+                Submit Feedback
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

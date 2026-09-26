@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block title %}
+Book Service
+{% endblock %}
+
+
+{% block content %}
+
+<section class="form-page">
+
+    <div class="form-card wide reveal">
+
+        <p class="eyebrow">
+            BOOKING
+        </p>
+
+        <h1>
+            {{ service["name"] }}
+        </h1>
+
+
+        <form method="post">
+
+            <div class="two-col">
+
+                <div>
+
+                    <label>
+                        Event Date
+                    </label>
+
+                    <input
+                        type="date"
+                        name="event_date"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        Event Time
+                    </label>
+
+                    <input
+                        type="time"
+                        name="event_time"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <label>
+                Venue
+            </label>
+
+            <input
+                type="text"
+                name="venue"
+                required
+            >
+
+
+            <label>
+                Number of Guests
+            </label>
+
+            <input
+                type="number"
+                name="guests"
+                min="0"
+                value="0"
+            >
+
+
+            <label>
+                Notes / Requirements
+            </label>
+
+            <textarea
+                name="notes"
+                rows="5"
+            ></textarea>
+
+
+            <div class="hero-buttons">
+
+                <button
+                    class="btn primary"
+                    type="submit"
+                >
+                    Submit Booking
+                </button>
+
+
+                <a
+                    class="btn secondary"
+                    href="{{ url_for('services') }}"
+                >
+                    Back to Services
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

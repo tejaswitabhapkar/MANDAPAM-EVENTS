@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block title %}
+My Bookings
+{% endblock %}
+
+
+{% block content %}
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">
+            MY BOOKINGS
+        </p>
+
+        <h1>
+            Your Event Bookings
+        </h1>
+
+    </div>
+
+
+    {% if bookings %}
+
+        <div class="table-wrap">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Service
+                        </th>
+
+                        <th>
+                            Date
+                        </th>
+
+                        <th>
+                            Time
+                        </th>
+
+                        <th>
+                            Venue
+                        </th>
+
+                        <th>
+                            Guests
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    {% for booking in bookings %}
+
+                        <tr>
+
+                            <td>
+                                {{ booking["service_name"] }}
+                            </td>
+
+                            <td>
+                                {{ booking["event_date"] }}
+                            </td>
+
+                            <td>
+                                {{ booking["event_time"] or "-" }}
+                            </td>
+
+                            <td>
+                                {{ booking["venue"] }}
+                            </td>
+
+                            <td>
+                                {{ booking["guests"] }}
+                            </td>
+
+                            <td>
+
+                                <span
+                                    class="status {{ booking['status']|lower }}"
+                                >
+                                    {{ booking["status"] }}
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    {% else %}
+
+        <div class="empty-card">
+
+            <h2>
+                No bookings yet
+            </h2>
+
+            <p>
+                Choose a service and create your first booking.
+            </p>
+
+            <a
+                class="btn primary"
+                href="{{ url_for('services') }}"
+            >
+                Browse Services
+            </a>
+
+        </div>
+
+    {% endif %}
+
+</section>
+
+{% endblock %}

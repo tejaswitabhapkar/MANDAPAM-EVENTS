@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login
+{% endblock %}
+
+
+{% block content %}
+
+<section class="form-page">
+
+    <div class="form-card reveal">
+
+        <h1>
+            Welcome Back
+        </h1>
+
+        <p>
+            Login to manage your events.
+        </p>
+
+
+        <form method="post">
+
+            <label>
+                Phone Number
+            </label>
+
+            <input
+                type="text"
+                name="phone"
+                required
+            >
+
+
+            <label>
+                Password
+            </label>
+
+            <input
+                type="password"
+                name="password"
+                required
+            >
+
+
+            <button
+                class="btn primary"
+                type="submit"
+            >
+                Login
+            </button>
+
+        </form>
+
+
+        <p class="hint">
+            Admin:
+            9999999999 / Admin@123
+        </p>
+
+
+        <p>
+            New user?
+
+            <a href="{{ url_for('register') }}">
+                Create an account
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}
