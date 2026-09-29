@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mandapam Events | Celebrate Every Moment</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #faf8f5;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* Header */
+        header {
+            background: #5a1832;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f5c16c;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(
+                rgba(90, 24, 50, 0.82),
+                rgba(90, 24, 50, 0.82)
+            ),
+            url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+            min-height: 420px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            color: #f7e8d0;
+        }
+
+        /* Blog Container */
+        .blog-container {
+            max-width: 950px;
+            margin: 60px auto;
+            padding: 0 25px;
+        }
+
+        .blog-content {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .blog-content h2 {
+            color: #5a1832;
+            font-size: 30px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        .blog-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .blog-content p {
+            font-size: 17px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .blog-content ul {
+            margin: 15px 0 25px 25px;
+        }
+
+        .blog-content li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        /* Highlight */
+        .highlight {
+            background: #fff4df;
+            border-left: 5px solid #c58b35;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 5px;
+            font-size: 19px;
+            color: #5a1832;
+            font-weight: 600;
+        }
+
+        /* Final Section */
+        .final-section {
+            text-align: center;
+            background: #5a1832;
+            color: white;
+            padding: 45px 25px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        .final-section h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .final-section p {
+            color: #f8e7d0;
+            font-size: 18px;
+        }
+
+        .tagline {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #f5c16c;
+        }
+
+        /* Footer */
+        footer {
+            background: #35101f;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 350px;
+            }
+
+            .hero-content h1 {
+                font-size: 34px;
+            }
+
+            .hero-content p {
+                font-size: 17px;
+            }
+
+            .blog-content {
+                padding: 30px 20px;
+            }
+
+            .blog-content h2 {
+                font-size: 25px;
+            }
+
+            .blog-content p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            Mandapam Events
+        </div>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/events">Events</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Celebrate Every Moment with Mandapam Events
+            </h1>
+
+            <p>
+                Your celebration. Your way. Your perfect place.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Blog -->
+    <main class="blog-container">
+
+        <article class="blog-content">
+
+            <h2>Introduction</h2>
+
+            <p>
+                Every celebration deserves a special place.
+            </p>
+
+            <p>
+                Whether it is a wedding, engagement, birthday,
+                anniversary, corporate gathering, cultural celebration,
+                or a family function, choosing the right venue can make
+                a memorable occasion even more special.
+            </p>
+
+            <p>
+                <strong>Mandapam Events</strong> is created with one
+                simple idea — to make finding and planning the perfect
+                event experience easier, more convenient, and enjoyable.
+            </p>
+
+
+            <h2>Your Celebration, Your Way</h2>
+
+            <p>
+                Every event is different, and every celebration has
+                its own story.
+            </p>
+
+            <p>
+                Some occasions are intimate gatherings with close family
+                and friends, while others are grand celebrations filled
+                with music, food, decorations, and hundreds of guests.
+            </p>
+
+            <p>
+                Mandapam Events brings together the possibilities you
+                need to plan an occasion that matches your vision.
+            </p>
+
+            <p>
+                From elegant celebrations to traditional ceremonies and
+                modern gatherings, the right venue creates the perfect
+                atmosphere for every moment.
+            </p>
+
+
+            <h2>Finding the Perfect Venue</h2>
+
+            <p>
+                The venue is one of the most important decisions when
+                planning an event.
+            </p>
+
+            <p>
+                It influences the atmosphere, guest experience,
+                decoration possibilities, food arrangements, and
+                overall memories of the celebration.
+            </p>
+
+            <p>
+                Mandapam Events helps make this decision easier by
+                bringing event-related information together in one place.
+            </p>
+
+            <div class="highlight">
+                The goal is not simply to find a place.
+                The goal is to find the right place for your special moment.
+            </div>
+
+
+            <h2>More Than Just a Venue</h2>
+
+            <p>
+                A memorable event is not created by a location alone.
+            </p>
+
+            <p>
+                It is created through the combination of:
+            </p>
+
+            <ul>
+                <li>A welcoming atmosphere</li>
+                <li>Beautiful decoration</li>
+                <li>Delicious food</li>
+                <li>Comfortable seating</li>
+                <li>Convenient facilities</li>
+                <li>Thoughtful arrangements</li>
+                <li>Great hospitality</li>
+                <li>Happy guests</li>
+            </ul>
+
+            <p>
+                Mandapam Events focuses on the complete celebration
+                experience so that hosts can spend less time worrying
+                about arrangements and more time enjoying their special
+                moments.
+            </p>
+
+
+            <h2>Perfect for Every Occasion</h2>
+
+            <p>
+                Mandapam Events can be a destination for exploring
+                possibilities for a wide variety of celebrations.
+            </p>
+
+
+            <h2>Weddings</h2>
+
+            <p>
+                A wedding is one of life's most precious occasions.
+                From the ceremony to the reception, the right setting
+                creates an unforgettable experience for the couple,
+                family, and guests.
+            </p>
+
+
+            <h2>Engagements</h2>
+
+            <p>
+                An engagement marks the beginning of a beautiful journey.
+                A comfortable and elegant venue can make this special
+                day even more memorable.
+            </p>
+
+
+            <h2>Birthdays</h2>
+
+            <p>
+                From small family celebrations to grand birthday
+                parties, the right space can turn an ordinary birthday
+                into an extraordinary memory.
+            </p>
+
+
+            <h2>Anniversaries</h2>
+
+            <p>
+                Every anniversary is an opportunity to celebrate
+                togetherness. A thoughtfully planned celebration
+                provides the perfect setting to remember the journey
+                and create new memories.
+            </p>
+
+
+            <h2>Corporate Events</h2>
+
+            <p>
+                Meetings, conferences, seminars, celebrations, and
+                corporate gatherings require a professional and
+                comfortable environment. A suitable venue can make
+                the event more organized and successful.
+            </p>
+
+
+            <h2>Cultural and Family Events</h2>
+
+            <p>
+                Festivals, family gatherings, traditional ceremonies,
+                and community celebrations bring people together.
+                Mandapam Events can help make these occasions
+                comfortable, welcoming, and memorable.
+            </p>
+
+
+            <h2>Making Event Planning Easier</h2>
+
+            <p>
+                Planning an event can sometimes feel overwhelming.
+            </p>
+
+            <p>
+                There are many things to consider — the number of guests,
+                location, facilities, arrangements, budget, decoration,
+                food, and overall atmosphere.
+            </p>
+
+            <p>
+                Mandapam Events aims to make this journey simpler by
+                helping people explore their options and make informed
+                decisions according to their needs.
+            </p>
+
+            <div class="highlight">
+                Plan your celebration with confidence and create
+                memories that last a lifetime.
+            </div>
+
+
+            <h2>Creating Memories That Last</h2>
+
+            <p>
+                Years later, people may not remember every small detail
+                of an event, but they remember how the celebration made
+                them feel.
+            </p>
+
+            <p>
+                They remember the laughter shared with friends.
+            </p>
+
+            <p>
+                They remember family coming together.
+            </p>
+
+            <p>
+                They remember the music, the food, the photographs,
+                and the moments that brought everyone closer.
+            </p>
+
+            <p>
+                A good event creates memories.
+                A great venue becomes part of those memories.
+            </p>
+
+
+            <h2>Your Special Day Deserves a Special Beginning</h2>
+
+            <p>
+                Every celebration starts with a decision — choosing how
+                and where you want to celebrate.
+            </p>
+
+            <p>
+                Mandapam Events brings inspiration and possibilities
+                together to help you take that first step with confidence.
+            </p>
+
+            <p>
+                Whether you are planning a grand wedding, a small family
+                gathering, a birthday celebration, a corporate event,
+                or a traditional function, your occasion deserves a
+                place that feels right.
+            </p>
+
+
+            <!-- Final Message -->
+            <div class="final-section">
+
+                <h2>
+                    Because Every Moment Is Worth Celebrating
+                </h2>
+
+                <p>
+                    Your special moments deserve a special place.
+                </p>
+
+                <div class="tagline">
+                    Mandapam Events
+                </div>
+
+                <p>
+                    Where Your Special Moments Find Their Perfect Place.
+                </p>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Mandapam Events. All Rights Reserved.
+        </p>
+
+        <p>
+            Celebrate. Create. Remember.
+        </p>
+
+    </footer>
+
+</body>
+</html>
